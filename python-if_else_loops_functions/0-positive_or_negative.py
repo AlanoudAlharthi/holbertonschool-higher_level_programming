@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-number = 98  # positive number for testing
+number = -98  # negative number for testing
 
 if number > 0:
     print(f"{number} is positive")
