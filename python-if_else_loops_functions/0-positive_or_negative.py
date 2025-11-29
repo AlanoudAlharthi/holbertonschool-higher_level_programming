@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-import random
-
-number = random.randint(-10000, 10000)
+number = 98  # positive number for testing
 
 if number > 0:
     print(f"{number} is positive")
