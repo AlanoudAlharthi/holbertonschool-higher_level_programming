@@ -9,15 +9,19 @@
 98
 >>> add_integer(4, "School")
 Traceback (most recent call last):
-...
 TypeError: b must be an integer
 >>> add_integer(None)
 Traceback (most recent call last):
-...
 TypeError: a must be an integer
->>> add_integer(10.5, 5.7)
-15
->>> add_integer(-10, 20)
-10
->>> add_integer(0)
-98
+>>> add_integer(0, 0)
+0
+>>> add_integer(-5, -5)
+-10
+>>> add_integer(3.9, 1.2)
+4
+>>> add_integer(float('inf'))
+Traceback (most recent call last):
+TypeError: a must be an integer
+>>> add_integer(float('nan'))
+Traceback (most recent call last):
+TypeError: a must be an integer
